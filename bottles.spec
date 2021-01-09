@@ -24,7 +24,7 @@ Requires: hicolor-icon-theme
 Requires: python3-gobject
 
 %description
-Easily manage Wine refix in a new way! (Run Windows software and games on
+Easily manage Wine prefix in a new way! (Run Windows software and games on
 Linux).
 
 Features:
@@ -93,4 +93,4 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 - build(update): 2.0.9.8
 
 * Thu Jan  7 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2.0.9.7-1
-- Initial packages
+- Initial package
