@@ -1,17 +1,13 @@
 %global uuid pm.mirko.%{name}
 
 Name: bottles
-Version: 2.0.9.7
+Version: 2.0.9.8
 Release: 1%{?dist}
 
 License: GPLv3+
 Summary: Easily manage Wine prefix in a new way
 URL: https://github.com/bottlesdevs/Bottles
 Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
-
-# The AppData files now go to /usr/share/metainfo
-# https://github.com/bottlesdevs/Bottles/pull/83
-Patch0: https://github.com/bottlesdevs/Bottles/pull/83.patch#/the-appdata-files-now-go-to-usr-share-metainfo.patch
 
 BuildArch: noarch
 
@@ -93,5 +89,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sat Jan  9 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2.0.9.8-1
+- build(update): 2.0.9.8
+
 * Thu Jan  7 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2.0.9.7-1
 - Initial packages
