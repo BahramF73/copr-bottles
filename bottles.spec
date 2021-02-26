@@ -1,8 +1,8 @@
 %global uuid pm.mirko.%{name}
 
 Name: bottles
-Version: 3.0.1.1
-Release: 2%{?dist}
+Version: 3.0.2
+Release: 1%{?dist}
 
 License: GPLv3+
 Summary: Easily manage Wine prefix in a new way
@@ -90,6 +90,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Fri Feb 26 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 3.0.2-1
+- build(update): 3.0.2
+
 * Fri Feb 26 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 3.0.1.1-2
 - build: Add libhandy1 dep
 
