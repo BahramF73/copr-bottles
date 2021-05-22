@@ -1,7 +1,7 @@
 %global uuid pm.mirko.%{name}
 
 Name: bottles
-Version: 3.1.9
+Version: 3.1.10
 Release: 1%{?dist}
 
 License: GPLv3+
@@ -90,6 +90,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sat May 22 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 3.1.10-1
+- build(update): 3.1.10
+
 * Thu May 20 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 3.1.9-1
 - build(update): 3.1.9
 
