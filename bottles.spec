@@ -1,8 +1,8 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.7.3
-Release:    2%{?dist}
+Version:    2021.7.14
+Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -91,6 +91,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Jul 14 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.7.14-1
+- build(update): 2021.7.14
+
 * Wed Jul 14 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.7.3-2
 - build(add dep): python3-pyyaml
 
