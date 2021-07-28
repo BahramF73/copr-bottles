@@ -1,8 +1,8 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.7.14
-Release:    2%{?dist}
+Version:    2021.7.28
+Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -91,6 +91,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Jul 28 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.7.28-1
+- build(update): 2021.7.28
+
 * Wed Jul 21 2021 Fedora Release Engineering <releng@fedoraproject.org> - 2021.7.14-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
 
