@@ -2,7 +2,7 @@
 
 Name:       bottles
 Version:    2021.8.14
-Release:    1%{?dist}
+Release:    2%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -23,6 +23,7 @@ Requires:   gtk3
 Requires:   hicolor-icon-theme
 Requires:   libhandy1
 Requires:   python3-gobject
+Requires:   python3-patool
 Requires:   python3-pyyaml
 
 %description
@@ -91,6 +92,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sun Aug 15 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.8.14-2
+- fix: Add new dep python3-patool
+
 * Sun Aug 15 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.8.14-1
 - build(update): 2021.8.14
 
