@@ -1,8 +1,8 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.8.14
-Release:    2%{?dist}
+Version:    2021.8.28
+Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -92,6 +92,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sat Aug 28 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.8.28-1
+- build(update): 2021.8.28
+
 * Sun Aug 15 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.8.14-2
 - fix: Add new dep python3-patool
 
