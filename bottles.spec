@@ -1,7 +1,7 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.9.14
+Version:    2021.9.28
 Release:    1%{?dist}
 BuildArch:  noarch
 
@@ -92,6 +92,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Mon Sep 27 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.9.28-1
+- build(update): 2021.9.28
+
 * Tue Sep 14 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.9.14-1
 - build(update): 2021.9.14
 
