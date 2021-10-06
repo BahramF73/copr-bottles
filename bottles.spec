@@ -2,7 +2,7 @@
 
 Name:       bottles
 Version:    2021.9.28
-Release:    1%{?dist}
+Release:    2%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -19,6 +19,7 @@ BuildRequires: python3-gobject
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 
+Requires:   glibc.i686  %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
 Requires:   gtk3
 Requires:   hicolor-icon-theme
 Requires:   libhandy1
@@ -92,6 +93,10 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Oct 06 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.9.28-2
+- build(add dep): glibc.i686
+  See: https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
+
 * Mon Sep 27 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.9.28-1
 - build(update): 2021.9.28
 
