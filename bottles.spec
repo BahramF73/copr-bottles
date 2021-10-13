@@ -1,8 +1,8 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.9.28
-Release:    3%{?dist}
+Version:    2021.10.14
+Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -93,6 +93,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Oct 13 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.10.14-1
+- chore(update): 2021.10.14
+
 * Thu Oct 07 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.9.28-3
 - fix: Multilib dep
 
