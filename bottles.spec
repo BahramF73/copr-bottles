@@ -1,7 +1,7 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.10.14
+Version:    2021.10.28
 Release:    1%{?dist}
 BuildArch:  noarch
 
@@ -24,6 +24,7 @@ Requires:   gtk3
 Requires:   hicolor-icon-theme
 Requires:   libhandy1
 Requires:   python3-gobject
+Requires:   python3-markdown
 Requires:   python3-patool
 Requires:   python3-pyyaml
 
@@ -93,6 +94,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Oct 27 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.10.28-1
+- chore(update): 2021.10.28
+
 * Wed Oct 13 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.10.14-1
 - chore(update): 2021.10.14
 
