@@ -1,14 +1,14 @@
 %global uuid pm.mirko.%{name}
 
 Name:       bottles
-Version:    2021.11.14
+Version:    2021.11.28
 Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
 Summary:    Easily manage Wine prefix in a new way
 URL:        https://github.com/bottlesdevs/Bottles
-Source0:    %{url}/archive/%{version}-treviso/%{name}-%{version}.tar.gz
+Source0:    %{url}/archive/%{version}-treviso.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires: desktop-file-utils
 BuildRequires: libappstream-glib
@@ -94,6 +94,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sun Nov 28 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.11.28-1
+- chore(update): 2021.11.28
+
 * Sat Nov 13 2021 Artem Polishchuk <ego.cordatus@gmail.com> - 2021.11.14-1
 - chore(update): 2021.11.14
 
