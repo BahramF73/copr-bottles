@@ -3,7 +3,7 @@
 
 Name:       bottles
 Version:    2022.1.14
-Release:    1%{?dist}
+Release:    2%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -95,6 +95,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Jan 19 2022 Fedora Release Engineering <releng@fedoraproject.org> - 2022.1.14-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
+
 * Thu Jan 13 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.1.14-1
 - chore(update): 2022.1.14
 
