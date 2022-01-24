@@ -3,7 +3,7 @@
 
 Name:       bottles
 Version:    2022.1.14
-Release:    2%{?dist}
+Release:    3%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -20,6 +20,7 @@ BuildRequires: python3-gobject
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 
+Requires:   cabextract
 Requires:   glibc(x86-32)  %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
 Requires:   gtk3
 Requires:   hicolor-icon-theme
@@ -95,6 +96,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Mon Jan 24 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.1.14-3
+- build(add dep): cabextract
+
 * Wed Jan 19 2022 Fedora Release Engineering <releng@fedoraproject.org> - 2022.1.14-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
