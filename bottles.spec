@@ -3,7 +3,7 @@
 
 Name:       bottles
 Version:    2022.2.28
-Release:    1%{?dist}
+Release:    2%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -23,6 +23,7 @@ BuildRequires: pkgconfig(gtk+-3.0)
 Requires:   cabextract
 Requires:   glibc(x86-32)  %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
 Requires:   gtk3
+Requires:   gtksourceview4
 Requires:   hicolor-icon-theme
 Requires:   libhandy1
 Requires:   python3-gobject
@@ -96,6 +97,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sat Mar 12 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.2.28-2
+- build: Add gtksourceview4 dep
+
 * Sun Feb 27 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.2.28-1
 - chore(update): 2022.2.28
 
