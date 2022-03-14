@@ -2,8 +2,8 @@
 %global suf trento
 
 Name:       bottles
-Version:    2022.2.28
-Release:    2%{?dist}
+Version:    2022.3.14
+Release:    1%{?dist}
 BuildArch:  noarch
 
 License:    GPLv3+
@@ -97,6 +97,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Mon Mar 14 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.3.14-1
+- chore(update): 2022.3.14
+
 * Sat Mar 12 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.2.28-2
 - build: Add gtksourceview4 dep
 
