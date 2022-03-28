@@ -2,7 +2,7 @@
 %global suf trento
 
 Name:       bottles
-Version:    2022.3.14
+Version:    2022.3.28
 Release:    1%{?dist}
 BuildArch:  noarch
 
@@ -19,6 +19,7 @@ BuildRequires: python3-gobject
 
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
+BuildRequires: pkgconfig(libhandy-1) >= 1.5
 
 Requires:   cabextract
 Requires:   glibc(x86-32)  %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
@@ -89,6 +90,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 %license LICENSE
 %doc README.md
 %{_bindir}/%{name}
+%{_bindir}/%{name}-cli
 %{_datadir}/%{name}/
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
@@ -97,6 +99,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Mon Mar 28 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.3.28-1
+- chore(update): 2022.3.28
+
 * Mon Mar 14 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.3.14-1
 - chore(update): 2022.3.14
 
