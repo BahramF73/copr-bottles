@@ -2,7 +2,7 @@
 %global suf trento
 
 Name:       bottles
-Version:    2022.4.14
+Version:    2022.4.28
 Release:    1%{?dist}
 BuildArch:  noarch
 
@@ -99,6 +99,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Wed Apr 27 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.4.28-1
+- chore(update): 2022.4.28
+
 * Wed Apr 13 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.4.14-1
 - chore(update): 2022.4.14
 
