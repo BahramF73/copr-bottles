@@ -2,7 +2,7 @@
 %global suf trento
 
 Name:       bottles
-Version:    2022.5.2
+Version:    2022.5.14
 Release:    1%{?dist}
 BuildArch:  noarch
 
@@ -26,7 +26,7 @@ Requires:   glibc(x86-32)  %dnl # https://github.com/bottlesdevs/Bottles/issues/
 Requires:   gtk3
 Requires:   gtksourceview4
 Requires:   hicolor-icon-theme
-Requires:   libhandy1
+Requires:   libhandy1 >= 1.5
 Requires:   python3-gobject
 Requires:   python3-markdown
 Requires:   python3-patool
@@ -99,6 +99,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Sat May 14 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.5.14-1
+- chore(update): 2022.5.14
+
 * Mon May 02 2022 Artem Polishchuk <ego.cordatus@gmail.com> - 2022.5.2-1
 - chore(update): 2022.5.2
 
