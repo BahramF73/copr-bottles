@@ -21,6 +21,7 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(libhandy-1) >= 1.5
 
+Requires:   cabextract
 Requires:   glibc(x86-32)           %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
 Requires:   gtk3
 Requires:   gtksourceview4
