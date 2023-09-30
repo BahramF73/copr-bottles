@@ -1,7 +1,6 @@
 %global uuid pm.mirko.%{name}
-%global gh_name Bottles
 
-%global forgeurl https://github.com/bottlesdevs/%{gh_name}
+%global forgeurl https://github.com/bottlesdevs/Bottles
 
 Name:       bottles
 Epoch:      1
@@ -13,7 +12,6 @@ BuildArch:  noarch
 # https://gitlab.gnome.org/jwestman/blueprint-compiler/-/issues/96
 ExcludeArch:    s390x
 
-%global tag %{version}
 %forgemeta
 
 # The following two files are licensed as MIT:
@@ -93,7 +91,7 @@ Features:
 
 
 %prep
-%autosetup -n %{gh_name}-%{version}
+%forgeautosetup -p1
 
 
 %build
