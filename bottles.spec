@@ -1,5 +1,3 @@
-%global uuid pm.mirko.%{name}
-
 %global forgeurl https://github.com/bottlesdevs/Bottles
 
 Name:       bottles
