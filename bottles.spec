@@ -52,6 +52,7 @@ Requires:   python3-pathvalidate
 Requires:   python3-fvs
 Requires:   python3-vkbasalt-cli
 Requires:   ImageMagick             %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2227538
+Requires:   python3-chardet         %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2240292
 
 %description
 Easily manage Wine prefix in a new way! (Run Windows software and games on
