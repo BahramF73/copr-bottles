@@ -1,5 +1,6 @@
 upstream_project_url: https://github.com/bottlesdevs/Bottles
 upstream_package_name: Bottles
+upstream_tag_template: "{version}"
 downstream_package_name: bottles
 
 copy_upstream_release_description: false
