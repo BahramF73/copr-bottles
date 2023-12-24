@@ -2,7 +2,7 @@
 
 Name:       bottles
 Epoch:      1
-Version:    51.10
+Version:    51.9
 Release:    %autorelease
 BuildArch:  noarch
 
