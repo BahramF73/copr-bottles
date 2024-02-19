@@ -2,7 +2,7 @@
 
 Name:       bottles
 Epoch:      1
-Version:    51.10
+Version:    51.11
 Release:    %autorelease
 Summary:    Run Windows in a Bottle
 
