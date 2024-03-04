@@ -1,0 +1,28 @@
+commit 3e1db3c75fee5eedb2190e7dba71239e923affb7
+Author: Sandro <devel@penguinpee.nl>
+Date:   Mon Mar 4 21:45:51 2024 +0100
+
+    Catch AttributeError in set_manager()
+    
+    Return empty list if AttributeError is raised.
+
+diff --git a/bottles/frontend/windows/main_window.py b/bottles/frontend/windows/main_window.py
+index 5fb9a15c..cd26408b 100644
+--- a/bottles/frontend/windows/main_window.py
++++ b/bottles/frontend/windows/main_window.py
+@@ -178,9 +178,12 @@ class MainWindow(Adw.ApplicationWindow):
+         def set_manager(result: Manager, error=None):
+             self.manager = result
+ 
+-            tmp_runners = [
+-                x for x in self.manager.runners_available if not x.startswith("sys-")
+-            ]
++            try:
++                tmp_runners = [
++                    x for x in self.manager.runners_available if not x.startswith("sys-")
++                ]
++            except AttributeError:
++                tmp_runners = []
+             if len(tmp_runners) == 0:
+                 self.show_onboard_view()
+ 
