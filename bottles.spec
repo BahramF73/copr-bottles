@@ -15,6 +15,8 @@ Summary:    Run Windows in a Bottle
 License:    GPL-3.0-or-later AND MIT
 URL:        %{forgeurl}
 Source0:    %{forgesource}
+# Make sure bottles dir exists when opening executable directly
+Patch:      ensure_bottles_dir_exists.patch
 
 BuildArch:  noarch
 # blueprint-compiler does not work on s390x:
