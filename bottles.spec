@@ -20,32 +20,30 @@ Patch:      ensure_bottles_dir_exists.patch
 # Don't fail on AttributeError
 Patch:      catch_exception_in_set_manager.patch
 
-BuildArch:  noarch
 # blueprint-compiler does not work on s390x:
 # https://gitlab.gnome.org/jwestman/blueprint-compiler/-/issues/96
 ExcludeArch:    s390x
+BuildArch:      noarch
 
-BuildRequires: desktop-file-utils
-BuildRequires: libappstream-glib
-BuildRequires: meson
-BuildRequires: python3
+BuildRequires:  desktop-file-utils
+BuildRequires:  libappstream-glib
+BuildRequires:  meson
+BuildRequires:  python3
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gtk4)
+BuildRequires:  pkgconfig(libadwaita-1) >= 1.1.99
+BuildRequires:  blueprint-compiler
 
-BuildRequires: pkgconfig(glib-2.0)
-BuildRequires: pkgconfig(gtk4)
-BuildRequires: pkgconfig(libadwaita-1) >= 1.1.99
-
-BuildRequires: blueprint-compiler
-
-Requires:   cabextract
-Requires:   glibc(x86-32)           %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
-Requires:   gtk4
-Requires:   gtksourceview5
-Requires:   hicolor-icon-theme
-Requires:   libadwaita >= 1.1.99
-Requires:   p7zip p7zip-plugins     %dnl # needed by the dependencies manager
-Requires:   patool
-Requires:   xdpyinfo                %dnl # needed by the display util
-Requires:   ImageMagick             %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2227538
+Requires:       cabextract
+Requires:       glibc(x86-32)           %dnl # https://github.com/bottlesdevs/Bottles/issues/601#issuecomment-936772762
+Requires:       gtk4
+Requires:       gtksourceview5
+Requires:       hicolor-icon-theme
+Requires:       libadwaita >= 1.1.99
+Requires:       p7zip p7zip-plugins     %dnl # needed by the dependencies manager
+Requires:       patool
+Requires:       xdpyinfo                %dnl # needed by the display util
+Requires:       ImageMagick             %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2227538
 
 # Use `generate_requires.sh` to generate Python runtime dependencies
 # using upstream's `requirements.txt`, which is included in the tarball,
