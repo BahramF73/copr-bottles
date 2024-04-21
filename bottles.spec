@@ -44,20 +44,29 @@ Requires:   hicolor-icon-theme
 Requires:   libadwaita >= 1.1.99
 Requires:   p7zip p7zip-plugins     %dnl # needed by the dependencies manager
 Requires:   patool
-Requires:   python3-gobject
-Requires:   python3-icoextract      %dnl # icons support
-Requires:   python3-markdown
-Requires:   python3-patool
-Requires:   python3-pefile          %dnl # icons support
-Requires:   python3-pyyaml
-Requires:   python3-requests        %dnl # needed by the download manager
-Requires:   python3-urllib3         %dnl # needed by the download manager
 Requires:   xdpyinfo                %dnl # needed by the display util
-Requires:   python3-pathvalidate
-Requires:   python3-fvs
-Requires:   python3-vkbasalt-cli
 Requires:   ImageMagick             %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2227538
-Requires:   python3-chardet         %dnl # https://bugzilla.redhat.com/show_bug.cgi?id=2240292
+
+# Use `generate_requires.sh` to generate Python runtime dependencies
+# using upstream's `requirements.txt`, which is included in the tarball,
+# but not used by Meson.
+Requires:       python3dist(pyyaml)
+Requires:       python3dist(pycurl)
+Requires:       python3dist(chardet)
+Requires:       python3dist(requests)
+Requires:       python3dist(markdown)
+Requires:       python3dist(icoextract)
+Requires:       python3dist(patool)
+Requires:       python3dist(pathvalidate)
+Requires:       python3dist(fvs)
+Requires:       python3dist(orjson)
+Requires:       python3dist(pycairo)
+Requires:       python3dist(pygobject)
+Requires:       python3dist(charset-normalizer)
+Requires:       python3dist(idna)
+Requires:       python3dist(urllib3)
+Requires:       python3dist(certifi)
+Requires:       python3dist(pefile)
 
 %description
 Bottles lets you run Windows software on Linux, such as applications
