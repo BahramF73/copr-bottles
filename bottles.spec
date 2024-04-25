@@ -66,6 +66,9 @@ Requires:       python3dist(urllib3)
 Requires:       python3dist(certifi)
 Requires:       python3dist(pefile)
 
+# Requirements not listed in upstream's `requirements.txt`
+Requires:       python3dist(vkbasalt-cli)
+
 %description
 Bottles lets you run Windows software on Linux, such as applications
 and games. It introduces a workflow that helps you organize by
