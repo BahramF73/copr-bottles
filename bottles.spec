@@ -20,9 +20,6 @@ Patch:      ensure_bottles_dir_exists.patch
 # Don't fail on AttributeError
 Patch:      catch_exception_in_set_manager.patch
 
-# blueprint-compiler does not work on s390x:
-# https://gitlab.gnome.org/jwestman/blueprint-compiler/-/issues/96
-ExcludeArch:    s390x
 BuildArch:      noarch
 
 BuildRequires:  desktop-file-utils
