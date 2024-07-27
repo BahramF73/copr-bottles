@@ -66,6 +66,21 @@ Requires:       python3dist(pefile)
 # Requirements not listed in upstream's `requirements.txt`
 Requires:       python3dist(vkbasalt-cli)
 
+# Optional dependencies which may be required for running 32-bit bottles.
+# We recommend those in order to allow users to opt out.
+Recommends:     freetype.i686
+Recommends:     mesa-dri-drivers.i686
+Recommends:     mesa-filesystem.i686
+Recommends:     mesa-libEGL.i686
+Recommends:     mesa-libgbm.i686
+Recommends:     mesa-libglapi.i686
+Recommends:     mesa-libGL.i686
+Recommends:     mesa-libGLU.i686
+Recommends:     mesa-va-drivers.i686
+Recommends:     mesa-vulkan-drivers.i686 
+Recommends:     SDL2.i686
+Recommends:     vulkan-loader.i686
+
 %description
 Bottles lets you run Windows software on Linux, such as applications
 and games. It introduces a workflow that helps you organize by
