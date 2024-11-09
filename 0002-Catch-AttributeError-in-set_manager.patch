@@ -1,10 +1,12 @@
-commit 3e1db3c75fee5eedb2190e7dba71239e923affb7
-Author: Sandro <devel@penguinpee.nl>
-Date:   Mon Mar 4 21:45:51 2024 +0100
+From 5302231bc20db5912349bd3bce27df5a4acf9256 Mon Sep 17 00:00:00 2001
+From: Sandro <devel@penguinpee.nl>
+Date: Mon, 4 Mar 2024 21:45:51 +0100
+Subject: [PATCH 2/2] Catch AttributeError in set_manager()
 
-    Catch AttributeError in set_manager()
-    
-    Return empty list if AttributeError is raised.
+Return empty list if AttributeError is raised.
+---
+ bottles/frontend/windows/main_window.py | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
 
 diff --git a/bottles/frontend/windows/main_window.py b/bottles/frontend/windows/main_window.py
 index 5fb9a15c..cd26408b 100644
@@ -26,3 +28,6 @@ index 5fb9a15c..cd26408b 100644
              if len(tmp_runners) == 0:
                  self.show_onboard_view()
  
+-- 
+2.47.0
+

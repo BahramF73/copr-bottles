@@ -16,9 +16,12 @@ License:    GPL-3.0-or-later AND MIT
 URL:        %{forgeurl}
 Source0:    %{forgesource}
 # Make sure bottles dir exists when opening executable directly
-Patch:      ensure_bottles_dir_exists.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=2249922
+# https://bugzilla.redhat.com/show_bug.cgi?id=2257180
+Patch:      0001-Make-sure-Paths.bottles-exists.patch
 # Don't fail on AttributeError
-Patch:      catch_exception_in_set_manager.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=2260135
+Patch:      0002-Catch-AttributeError-in-set_manager.patch
 
 BuildArch:      noarch
 
