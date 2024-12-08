@@ -1,11 +1,10 @@
-%global forgeurl https://github.com/bottlesdevs/Bottles
-
 Name:       bottles
 Epoch:      1
 Version:    51.16
 Release:    %autorelease
 Summary:    Run Windows in a Bottle
 
+%global forgeurl https://github.com/bottlesdevs/Bottles
 %global tag %{version}
 %forgemeta
 
