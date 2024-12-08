@@ -1,0 +1,34 @@
+From 979dce37851de94d1e82ac5486089c5b67cf5583 Mon Sep 17 00:00:00 2001
+From: Sandro <devel@penguinpee.nl>
+Date: Sun, 8 Dec 2024 11:22:42 +0100
+Subject: [PATCH 1002/1003] Change issue URL to Bugzilla
+
+Since upstream does not whish to receive bug reports from non-Flatpak
+users, direct them to Bugzilla instead.
+---
+ data/com.usebottles.bottles.metainfo.xml.in.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/data/com.usebottles.bottles.metainfo.xml.in.in b/data/com.usebottles.bottles.metainfo.xml.in.in
+index ee38f806..1b306002 100644
+--- a/data/com.usebottles.bottles.metainfo.xml.in.in
++++ b/data/com.usebottles.bottles.metainfo.xml.in.in
+@@ -52,7 +52,7 @@
+   <translation type="gettext">@APP_ID@</translation>
+   <content_rating type="oars-1.1"/>
+   <url type="homepage">https://usebottles.com</url>
+-  <url type="bugtracker">https://github.com/bottlesdevs/Bottles/issues</url>
++  <url type="bugtracker">https://bugz.fedoraproject.org/bottles</url>
+   <url type="help">https://docs.usebottles.com</url>
+   <url type="donation">https://usebottles.com/funding</url>
+   <url type="translate">https://hosted.weblate.org/engage/bottles</url>
+@@ -246,4 +246,4 @@
+       </description>
+     </release>
+   </releases>
+-</component>
+\ No newline at end of file
++</component>
+-- 
+2.47.0
+
