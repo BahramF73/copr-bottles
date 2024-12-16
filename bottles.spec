@@ -113,6 +113,9 @@ Features:
 %prep
 %forgeautosetup -p1
 
+# F40 only has meson 1.4.1. Lower requirement.
+sed -r -i 's/(meson_version.*)1\.[0-9]\.[0-9]/\11.4.1/' meson.build
+
 
 %build
 %meson
