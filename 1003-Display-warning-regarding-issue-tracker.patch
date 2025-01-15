@@ -1,19 +1,19 @@
-From 723cdc6bc58c65a4aa6672971ba0f22f2b3523f6 Mon Sep 17 00:00:00 2001
+From 946114f3aba1913d4cd9c9498a35cee2da1d0cf0 Mon Sep 17 00:00:00 2001
 From: Sandro <devel@penguinpee.nl>
 Date: Sun, 8 Dec 2024 12:21:57 +0100
-Subject: [PATCH 1003/1003] Display warning regarding issue tracker
+Subject: [PATCH 1003/1005] Display warning regarding issue tracker
 
 Make sure users know where to report bugs regarding the RPM package of
 Bottles. Revert upstream's outright denial of usage.
 ---
- bottles/frontend/windows/main_window.py | 23 ++++++++++-------------
+ bottles/frontend/windows/window.py | 23 ++++++++++-------------
  1 file changed, 10 insertions(+), 13 deletions(-)
 
-diff --git a/bottles/frontend/windows/main_window.py b/bottles/frontend/windows/main_window.py
-index 79bf0d72..48321e2a 100644
---- a/bottles/frontend/windows/main_window.py
-+++ b/bottles/frontend/windows/main_window.py
-@@ -104,29 +104,26 @@ class MainWindow(Adw.ApplicationWindow):
+diff --git a/bottles/frontend/windows/window.py b/bottles/frontend/windows/window.py
+index 802b08b5..d31d0cf7 100644
+--- a/bottles/frontend/windows/window.py
++++ b/bottles/frontend/windows/window.py
+@@ -102,29 +102,26 @@ class BottlesWindow(Adw.ApplicationWindow):
  
              def response(dialog, response, *args):
                  if response == "close":
@@ -46,7 +46,7 @@ index 79bf0d72..48321e2a 100644
 -            )
 -            logging.error("https://usebottles.com/download/")
 -            return
-+            logging.warn(_("Bottles is only supported within a sandboxed format. Official sources of Bottles are available at:"))
++            logging.warn(_("Bottles is only supported within a sandboxed environment. Official sources of Bottles are available at:"))
 +            logging.warn("https://usebottles.com/download/")
 +            logging.warn(_("Please report any issues using the RPM package to:"))
 +            logging.warn("https://bugz.fedoraproject.org/bottles")
@@ -54,5 +54,5 @@ index 79bf0d72..48321e2a 100644
          # Loading view
          self.page_loading = LoadingView()
 -- 
-2.47.0
+2.49.0
 
