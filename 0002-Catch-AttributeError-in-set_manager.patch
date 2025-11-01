@@ -1,18 +1,18 @@
-From 202a3cd999e8685549aee4b9c206bdcfa003c82a Mon Sep 17 00:00:00 2001
+From 5302231bc20db5912349bd3bce27df5a4acf9256 Mon Sep 17 00:00:00 2001
 From: Sandro <devel@penguinpee.nl>
 Date: Mon, 4 Mar 2024 21:45:51 +0100
-Subject: [PATCH 2/3] Catch AttributeError in set_manager()
+Subject: [PATCH 2/2] Catch AttributeError in set_manager()
 
 Return empty list if AttributeError is raised.
 ---
- bottles/frontend/windows/window.py | 9 ++++++---
+ bottles/frontend/windows/main_window.py | 9 ++++++---
  1 file changed, 6 insertions(+), 3 deletions(-)
 
-diff --git a/bottles/frontend/windows/window.py b/bottles/frontend/windows/window.py
-index bddd3f34..c5cf2b37 100644
---- a/bottles/frontend/windows/window.py
-+++ b/bottles/frontend/windows/window.py
-@@ -213,9 +213,12 @@ class BottlesWindow(Adw.ApplicationWindow):
+diff --git a/bottles/frontend/windows/main_window.py b/bottles/frontend/windows/main_window.py
+index 5fb9a15c..cd26408b 100644
+--- a/bottles/frontend/windows/main_window.py
++++ b/bottles/frontend/windows/main_window.py
+@@ -178,9 +178,12 @@ class MainWindow(Adw.ApplicationWindow):
          def set_manager(result: Manager, error=None):
              self.manager = result
  

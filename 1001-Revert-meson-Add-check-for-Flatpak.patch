@@ -1,7 +1,7 @@
-From 387213dd5c1179f1dbf8352ac389cbf8323a0d6f Mon Sep 17 00:00:00 2001
+From eeb64140ebb693642c1c27689d8f99772bb00106 Mon Sep 17 00:00:00 2001
 From: Sandro <devel@penguinpee.nl>
 Date: Sun, 8 Dec 2024 11:11:27 +0100
-Subject: [PATCH 1001/1005] Revert "meson: Add check for Flatpak"
+Subject: [PATCH 1001/1003] Revert "meson: Add check for Flatpak"
 
 We still want to package Bottle as RPM for our users, despite upstream
 having a very strong, almost hostile, preference for Flatpak.
@@ -29,5 +29,5 @@ index 6ff7c011..c26ea0b9 100644
    '__init__.py',
    'main.py',
 -- 
-2.49.0
+2.47.0
 
