@@ -1,5 +1,5 @@
 Name:       bottles
-Epoch:      1
+Epoch:      2
 Version:    51.17
 Release:    %autorelease
 Summary:    Run Windows in a Bottle
@@ -38,7 +38,7 @@ BuildArch:      noarch
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
 BuildRequires:  meson
-BuildRequires:  python3
+BuildRequires:  python3-devel
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.1.99
