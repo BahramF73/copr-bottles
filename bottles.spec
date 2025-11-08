@@ -91,6 +91,18 @@ Recommends:     mesa-vulkan-drivers.i686
 Recommends:     SDL2.i686
 Recommends:     vulkan-loader.i686
 
+# Optional dependencies that will provide extra features in Bottles
+# when installed.
+Recommends:     gamemode
+Recommends:     gamescope
+Recommends:     mangohud
+# Since this pulls in OBS Studio and is not generally required for gaming
+# setups, we only suggest.
+Suggests:       obs-studio-plugin-vkcapture
+Recommends:     vkBasalt
+Recommends:     vmtouch
+
+
 %description
 Bottles lets you run Windows software on Linux, such as applications
 and games. It introduces a workflow that helps you organize by
