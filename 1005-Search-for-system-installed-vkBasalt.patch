@@ -1,0 +1,30 @@
+From 9874f7e6d9289c1dd398c26eb9f8c585412aacff Mon Sep 17 00:00:00 2001
+From: Sandro <devel@penguinpee.nl>
+Date: Sat, 8 Nov 2025 12:06:54 +0100
+Subject: [PATCH 1005/1005] Search for system installed vkBasalt
+
+Also look in /usr/local in case a local install is present.
+---
+ bottles/backend/globals.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/bottles/backend/globals.py b/bottles/backend/globals.py
+index 488acea3..d6a6a466 100644
+--- a/bottles/backend/globals.py
++++ b/bottles/backend/globals.py
+@@ -52,9 +52,9 @@ class Paths:
+     @staticmethod
+     def is_vkbasalt_available():
+         vkbasalt_paths = [
+-            "/usr/lib/extensions/vulkan/vkBasalt/etc/vkBasalt",
+-            "/usr/local",
+-            "/usr/share/vkBasalt",
++            "/usr/lib64/vkbasalt/libvkbasalt.so",
++            "/usr/local/lib64/libvkbasalt.so",
++            "/usr/local/lib64/vkbasalt/libvkbasalt.so",
+         ]
+         for path in vkbasalt_paths:
+             if os.path.exists(path):
+-- 
+2.51.0
+

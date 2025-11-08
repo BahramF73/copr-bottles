@@ -24,9 +24,6 @@ Patch:      0002-Catch-AttributeError-in-set_manager.patch
 # Catch AttributeError when closing window
 # https://bugzilla.redhat.com/show_bug.cgi?id=2313567
 Patch:      0003-Catch-AttributeError-when-window-is-closed.patch
-# Attempt to prevent segfaults when picking files
-# https://bugzilla.redhat.com/show_bug.cgi?id=2296214
-Patch:      0004-Use-FileDialog-for-all-file-path-pickers.patch
 # Downstream only patches counteracting upstream's enforcement of Flatpak
 Patch:      1001-Revert-meson-Add-check-for-Flatpak.patch
 Patch:      1002-Change-issue-URL-to-Bugzilla.patch

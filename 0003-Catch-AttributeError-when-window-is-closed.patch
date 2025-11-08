@@ -1,7 +1,7 @@
-From 25ca897f6a04187cec0e06e4740abf8378cf0d43 Mon Sep 17 00:00:00 2001
+From 3001aaba2b1ea6488b69f8714171eff635043b53 Mon Sep 17 00:00:00 2001
 From: Sandro <devel@penguinpee.nl>
 Date: Sat, 9 Nov 2024 13:42:00 +0100
-Subject: [PATCH] Catch AttributeError when window is closed
+Subject: [PATCH 3/3] Catch AttributeError when window is closed
 
 In certain situations Bottles crashes with:
 
@@ -13,10 +13,10 @@ This should allow Bottles to exit without error.
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/bottles/frontend/main.py b/bottles/frontend/main.py
-index 5616ab22..7c44b585 100644
+index f6a07b15..ea3d7ad1 100644
 --- a/bottles/frontend/main.py
 +++ b/bottles/frontend/main.py
-@@ -260,7 +260,10 @@ class Bottles(Adw.Application):
+@@ -267,7 +267,10 @@ class Bottles(Adw.Application):
          logging.info(
              _("[Quit] request received."),
          )
@@ -29,5 +29,5 @@ index 5616ab22..7c44b585 100644
  
      @staticmethod
 -- 
-2.47.0
+2.51.0
 
