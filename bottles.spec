@@ -134,7 +134,7 @@ sed -r -i 's/(meson_version.*)1\.[0-9]\.[0-9]/\11.4.1/' meson.build
 
 %install
 %meson_install
-%find_lang %{name}
+# %find_lang %{name}
 
 
 %check
