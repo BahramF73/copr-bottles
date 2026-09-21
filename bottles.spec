@@ -26,7 +26,7 @@ Patch:      0001-Make-sure-Paths.bottles-exists.patch
 # Patch:      0003-Catch-AttributeError-when-window-is-closed.patch
 # Downstream only patches counteracting upstream's enforcement of Flatpak
 Patch:      1001-Revert-meson-Add-check-for-Flatpak.patch
-Patch:      1002-Change-issue-URL-to-Bugzilla.patch
+# Patch:      1002-Change-issue-URL-to-Bugzilla.patch
 Patch:      1003-Display-warning-regarding-issue-tracker.patch
 Patch:      1004-Do-not-require-Xdp.patch
 
