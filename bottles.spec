@@ -20,7 +20,7 @@ Source0:    %{forgesource}
 Patch:      0001-Make-sure-Paths.bottles-exists.patch
 # Don't fail on AttributeError
 # https://bugzilla.redhat.com/show_bug.cgi?id=2260135
-Patch:      0002-Catch-AttributeError-in-set_manager.patch
+# Patch:      0002-Catch-AttributeError-in-set_manager.patch
 # Catch AttributeError when closing window
 # https://bugzilla.redhat.com/show_bug.cgi?id=2313567
 Patch:      0003-Catch-AttributeError-when-window-is-closed.patch
