@@ -134,7 +134,7 @@ sed -r -i 's/(meson_version.*)1\.[0-9]\.[0-9]/\11.4.1/' meson.build
 
 %install
 %meson_install
-# %find_lang %{name}
+%find_lang com.usebottles.bottles
 
 
 %check
@@ -142,7 +142,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.xml
 desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
-%files
+%files -f com.usebottles.bottles.lang
 %license COPYING.md
 %doc README.md
 %{_bindir}/%{name}
