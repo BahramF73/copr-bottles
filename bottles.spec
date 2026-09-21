@@ -144,6 +144,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 %files -f com.usebottles.bottles.lang
 %license COPYING.md
+%license %{_datadir}/licenses/com.usebottles.bottles/eagle-intel-data-license.txt
 %doc README.md
 %{_bindir}/%{name}
 %{_bindir}/%{name}-cli
