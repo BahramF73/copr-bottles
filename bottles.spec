@@ -1,5 +1,5 @@
 Name:       bottles
-Epoch:      1
+Epoch:      3
 Version:    67.4
 Release:    %autorelease
 Summary:    Run Windows in a Bottle
@@ -28,7 +28,7 @@ Patch:      0001-Make-sure-Paths.bottles-exists.patch
 Patch:      1001-Revert-meson-Add-check-for-Flatpak.patch
 # Patch:      1002-Change-issue-URL-to-Bugzilla.patch
 Patch:      1003-Display-warning-regarding-issue-tracker.patch
-# Patch:      1004-Do-not-require-Xdp.patch
+Patch:      1004-Do-not-require-Xdp.patch
 
 BuildArch:      noarch
 
